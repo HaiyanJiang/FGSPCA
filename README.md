@@ -77,7 +77,7 @@ The description of the arguments is listed in the following:
 
 * ``X`` is a real ``n`` by ``p`` data matrix (or data frame), where ``n`` denotes the number of observations and ``p`` the number of variables.
 
-* ``B_init`` the initial value of matrix B.
+* ``B_init`` the initial value of matrix `B`.
 
 * ``K`` specifies the target rank, i.e., number of components to be computed.
 
@@ -85,7 +85,13 @@ The description of the arguments is listed in the following:
 
 * ``type``  type of ``X``, which can take values of ``predictor``, or ``Gram``. If `type="Gram"` the model should deal with the root matrix of ``X``. If `type="predictor"` the model should directly deal with the matrix ``X``.
 
-* ``tau_S`` $\tau$ the controlling parameter corresponding to $p_1(\beta_l)$ and $p_2(\beta_l)$, which determines when the small values of $|\beta_l|$ will be penalized and when the small difference values of $|\beta_l - \beta_{l'}|$ will be penalized.
+* ``tau_S`` $\tau$ the controlling parameter corresponding to ![p_1(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_l)) and 
+![p_2(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_l)) 
+which determines when the small values of 
+![|\beta_l|](https://latex.codecogs.com/svg.latex?&space;|\beta_l|) % $|\beta_l|$ 
+will be penalized and when the small difference values of 
+![|\beta_l-\beta_{l'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_l-\beta_{l'}|), $|\beta_l - \beta_{l'}|$ 
+will be penalized.
 
 * ``lambda2`` $\lambda_2$ tuning parameter corresponding to $p_2(\beta_l)$.
 * ``lambda3`` $\lambda$ tuning parameter corresponding to $\lambda \|B\|_2^2$, controls the amount of ridge shrinkage to apply in order to improve conditioning.
