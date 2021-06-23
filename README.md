@@ -92,9 +92,9 @@ with length of ``K``, the sparsity controlling parameters, tuning parameter corr
 the controlling parameter corresponding to ![p_1(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_j)) and 
 ![p_2(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_j)) 
 which determines when the small values of 
-![|\beta_j|](https://latex.codecogs.com/svg.latex?&space;|\beta_j|)
+![|\beta_{jl}|](https://latex.codecogs.com/svg.latex?&space;|\beta_{jl}|)
 will be penalized and when the small difference values of 
-![|\beta_l-\beta_{l'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_l-\beta_{l'}|),
+![|\beta_{jl}-\beta_{jl'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_{jl}-\beta_{jl'}|),
 will be penalized.
 
 * ``lambda2`` ![\lambda_2](https://latex.codecogs.com/svg.latex?&space;\lambda_2)
