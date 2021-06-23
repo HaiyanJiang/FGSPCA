@@ -81,20 +81,29 @@ The description of the arguments is listed in the following:
 
 * ``K`` specifies the target rank, i.e., number of components to be computed.
 
-* ``para`` is a list of $\lambda_1$ with length of ``K``, the sparsity controlling parameters, tuning parameter corresponding to $p_1(\beta_l)$. Higher values lead to sparser components. 
+* ``para`` is a list of 
+![\lambda_1](https://latex.codecogs.com/svg.latex?&space;\lambda_1)
+with length of ``K``, the sparsity controlling parameters, tuning parameter corresponding to 
+![p_1(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_l)). Higher values lead to sparser components. 
 
 * ``type``  type of ``X``, which can take values of ``predictor``, or ``Gram``. If `type="Gram"` the model should deal with the root matrix of ``X``. If `type="predictor"` the model should directly deal with the matrix ``X``.
 
-* ``tau_S`` $\tau$ the controlling parameter corresponding to ![p_1(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_l)) and 
-![p_2(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_l)) 
+* ``tau_S`` ![\tau](https://latex.codecogs.com/svg.latex?&space;\tau)
+the controlling parameter corresponding to ![p_1(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_l)) and 
+![p_2(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_l)) 
 which determines when the small values of 
-![|\beta_l|](https://latex.codecogs.com/svg.latex?&space;|\beta_l|) % $|\beta_l|$ 
+![|\beta_l|](https://latex.codecogs.com/svg.latex?&space;|\beta_l|)
 will be penalized and when the small difference values of 
-![|\beta_l-\beta_{l'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_l-\beta_{l'}|), $|\beta_l - \beta_{l'}|$ 
+![|\beta_l-\beta_{l'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_l-\beta_{l'}|),
 will be penalized.
 
-* ``lambda2`` $\lambda_2$ tuning parameter corresponding to $p_2(\beta_l)$.
-* ``lambda3`` $\lambda$ tuning parameter corresponding to $\lambda \|B\|_2^2$, controls the amount of ridge shrinkage to apply in order to improve conditioning.
+* ``lambda2`` ![\lambda_2](https://latex.codecogs.com/svg.latex?&space;\lambda_2)
+tuning parameter corresponding to 
+![p_2(\beta_l)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_l)) .
+* ``lambda3`` ![\lambda](https://latex.codecogs.com/svg.latex?&space;\lambda)
+tuning parameter corresponding to
+![\lambda \|B\|_2^2](https://latex.codecogs.com/svg.latex?&space;\lambda \|B\|_2^2)
+controls the amount of ridge shrinkage to apply in order to improve conditioning.
 * ``use.corr`` logical value which indicates whether the variables should be shifted to be zero centered (FALSE by default).
 
 
