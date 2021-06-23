@@ -51,11 +51,14 @@ p_1(\beta_j)=\sum_{l=1}^p\min(\frac{|\beta_{jl}|}{\tau},1)
 p_2(\beta_j)=\sum_{l<l',(l,l')\in E}\min(\frac{|\beta_{jl}-\beta_{jl'}|}{\tau},1) -->
 
 
-![p_1(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_j)) 
-
-Here $p_1(\beta_j)$ and $p_2(\beta_j)$ are two non-convex regularization functions.
+Here ![p_1(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_j)) 
+and ![p_2(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_j)) 
+are two non-convex regularization functions.
 The matrix ``B`` is the sparse loadings matrix with grouping effect and ``A`` is an orthonormal matrix.
-Here we use a combination of the $p_1(\beta_j)$ and $p_2(\beta_j)$ as non-convex sparsity-promoting and grouping-promoting regularizers.
+Here we use a combination of the 
+![p_1(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_1(\beta_j)) and 
+![p_2(\beta_j)](https://latex.codecogs.com/svg.latex?&space;p_2(\beta_j)) 
+as non-convex sparsity-promoting and grouping-promoting regularizers.
 Then, the principal components ``Z`` are then formed as
 
 ```
