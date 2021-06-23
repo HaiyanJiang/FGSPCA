@@ -94,7 +94,7 @@ the controlling parameter corresponding to ![p_1(\beta_j)](https://latex.codecog
 which determines when the small values of 
 ![|\beta_{jl}|](https://latex.codecogs.com/svg.latex?&space;|\beta_{jl}|)
 will be penalized and when the small difference values of 
-![|\beta_{jl}-\beta_{jl'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_{jl}-\beta_{jl'}|),
+![|\beta_{jl}-\beta_{jl'}|](https://latex.codecogs.com/svg.latex?&space;|\beta_{jl}-\beta_{jl'}|)
 will be penalized.
 
 * ``lambda2`` ![\lambda_2](https://latex.codecogs.com/svg.latex?&space;\lambda_2)
